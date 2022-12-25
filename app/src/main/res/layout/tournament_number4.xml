@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NumberActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="5dp"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="5dp"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="60dp"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="60dp"/>
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4강"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="@id/guideline3"
+            app:layout_constraintEnd_toEndOf="@id/guideline2"
+            app:layout_constraintStart_toStartOf="@id/guideline1"
+            app:layout_constraintTop_toTopOf="@id/guideline4"
+            app:layout_constraintVertical_bias="0.115" />
+
+        <TextView
+            android:id="@+id/team_semi1"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="72dp"
+            android:background="@drawable/outline"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintStart_toStartOf="@id/guideline1"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <TextView
+            android:id="@+id/team_semi1_s"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:background="@drawable/outline"
+            android:gravity="center"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/team_semi2"
+            app:layout_constraintStart_toEndOf="@+id/team_semi1"/>
+
+        <TextView
+            android:id="@+id/team_semi3"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@drawable/outline"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/team_semi4"
+            app:layout_constraintStart_toStartOf="@id/guideline1" />
+
+        <TextView
+            android:id="@+id/team_semi3_s"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:background="@drawable/outline"
+            android:gravity="center"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/team_semi4"
+            app:layout_constraintStart_toEndOf="@+id/team_semi3"/>
+
+        <TextView
+            android:id="@+id/team_semi4"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@drawable/outline"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintStart_toStartOf="@id/guideline1"
+            app:layout_constraintTop_toBottomOf="@+id/team_semi3" />
+
+        <TextView
+            android:id="@+id/team_semi4_s"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:background="@drawable/outline"
+            android:gravity="center"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            app:layout_constraintTop_toBottomOf="@+id/team_semi3_s"
+            app:layout_constraintStart_toEndOf="@+id/team_semi4"/>
+
+        <TextView
+            android:id="@+id/team_semi2"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="80dp"
+            android:background="@drawable/outline"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/team_semi3"
+            app:layout_constraintStart_toStartOf="@id/guideline1"
+            app:layout_constraintTop_toBottomOf="@+id/team_semi1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/team_semi2_s"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:background="@drawable/outline"
+            android:gravity="center"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            app:layout_constraintTop_toBottomOf="@+id/team_semi1_s"
+            app:layout_constraintStart_toEndOf="@+id/team_semi2"/>
+
+        <Button
+            android:id="@+id/final_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="87dp"
+            android:layout_marginBottom="14dp"
+            android:text="결승"
+            android:textColor="?android:textColorPrimary"
+            app:layout_constraintBottom_toBottomOf="@id/guideline3"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="87dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="14dp"
+            android:text="뒤로가기"
+            android:textColor="?android:textColorPrimary"
+            app:layout_constraintBottom_toBottomOf="@id/guideline3"
+            app:layout_constraintEnd_toStartOf="@+id/final_btn"
+            app:layout_constraintStart_toStartOf="@id/guideline1" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="26dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="20dp"
+            android:background="?android:textColorPrimary"
+            app:layout_constraintEnd_toStartOf="@+id/view3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintEnd_toEndOf="@id/guideline2"
+            app:layout_constraintStart_toEndOf="@+id/team_semi1_s"
+            app:layout_constraintTop_toTopOf="@+id/team_semi1_s" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="26dp"
+            android:layout_height="2dp"
+            android:background="?android:textColorPrimary"
+            app:layout_constraintEnd_toStartOf="@+id/view3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintEnd_toEndOf="@id/guideline2"
+            app:layout_constraintBottom_toBottomOf="@+id/team_semi2_s"
+            app:layout_constraintStart_toEndOf="@+id/team_semi2_s"
+            app:layout_constraintTop_toBottomOf="@+id/view1"
+            app:layout_constraintVertical_bias="0.666" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="2dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="7dp"
+            android:background="?android:textColorPrimary"
+            app:layout_constraintBottom_toTopOf="@+id/view2"
+            app:layout_constraintEnd_toEndOf="@id/guideline2"
+            app:layout_constraintStart_toEndOf="@+id/team_semi2_s"
+            app:layout_constraintTop_toBottomOf="@+id/view1" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="26dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="20dp"
+            android:background="?android:textColorPrimary"
+            app:layout_constraintEnd_toEndOf="@id/guideline2"
+            app:layout_constraintEnd_toStartOf="@+id/view6"
+            app:layout_constraintHorizontal_bias="0.3"
+            app:layout_constraintStart_toEndOf="@+id/team_semi3_s"
+            app:layout_constraintTop_toTopOf="@+id/team_semi3_s" />
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="26dp"
+            android:layout_height="2dp"
+            android:background="?android:textColorPrimary"
+            app:layout_constraintBottom_toBottomOf="@+id/team_semi4_s"
+            app:layout_constraintEnd_toEndOf="@id/guideline2"
+            app:layout_constraintEnd_toStartOf="@+id/view6"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintStart_toEndOf="@+id/team_semi4_s"
+            app:layout_constraintTop_toBottomOf="@+id/view4"
+            app:layout_constraintVertical_bias="0.666" />
+
+        <View
+            android:id="@+id/view6"
+            android:layout_width="2dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="7dp"
+            android:background="?android:textColorPrimary"
+            app:layout_constraintBottom_toTopOf="@+id/view5"
+            app:layout_constraintEnd_toEndOf="@id/guideline2"
+            app:layout_constraintStart_toEndOf="@+id/team_semi4_s"
+            app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+        <LinearLayout
+            android:id="@+id/layoutToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageMenu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_menu"
+                android:tint="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@id/layoutToolBar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/navHostFragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/main"/>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_nav_menu"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/navigation_menu"
+        app:headerLayout="@layout/layout_navigation_header"
+        android:layout_gravity="start"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

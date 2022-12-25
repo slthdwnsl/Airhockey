@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="kr.ac.mjc.ict2018261001.airhockey.NavigationFragments.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/setting"
+        android:name="kr.ac.mjc.ict2018261001.airhockey.NavigationFragments.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/support"
+        android:name="kr.ac.mjc.ict2018261001.airhockey.NavigationFragments.SupportFragment"
+        android:label="Support"
+        tools:layout="@layout/fragment_support" />
+    <fragment
+        android:id="@+id/about_us"
+        android:name="kr.ac.mjc.ict2018261001.airhockey.NavigationFragments.InfoFragment"
+        android:label="About_us"
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/notifications"
+        android:name="kr.ac.mjc.ict2018261001.airhockey.NavigationFragments.NotificationFragment"
+        android:label="Notification"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/shareFragment"
+        android:name="kr.ac.mjc.ict2018261001.airhockey.NavigationFragments.ShareFragment"
+        android:label="fragment_share"
+        tools:layout="@layout/fragment_share" />
+    <fragment
+        android:id="@+id/selectPlayerFragment"
+        android:name="kr.ac.mjc.ict2018261001.airhockey.NavigationFragments.SelectPlayerFragment"
+        android:label="fragment_select_player"
+        tools:layout="@layout/fragment_select_player" />
+</navigation>

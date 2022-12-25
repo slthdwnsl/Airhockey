@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_homes"
+        android:title="Home"/>
+    <item
+        android:id="@+id/game"
+        android:icon="@drawable/stadia_controller"
+        android:title="게임"/>
+    <item
+        android:id="@+id/setting"
+        android:icon="@drawable/ic_setting"
+        android:title="설정"/>
+
+</menu>

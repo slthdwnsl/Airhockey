@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Airhockey</string>
+    <string name="success_toast">Success Toast</string>
+    <string name="error_toast">Error Toast</string>
+    <string name="warning_toast">Warning Toast</string>
+    <string name="info_toast">Info Toast</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
